@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <hr>
+    <section>
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Here you can see a quick summary of your financial activity and account overview.</p>
+    </section>
+
+    <section>
+        <h2>Financial Summary</h2>
+
+        <div>
+            <article>
+                <h2>Total Income</h2>
+                <p id="total-income">PKR 0</p>
+            </article>
+
+            <br>
+            <article>
+                <h2>Total Expenses</h2>
+                <p id="total-expense">PKR 0</p>
+            </article>
+
+            <br>
+            <article>
+                <h2>Remaining Balance</h2>
+                <p id="remaining-balance">PKR 0</p>
+            </article>
+            <br>
+<article>
+    <h2>Category Statistics 📊</h2>
+    <div id="category-stats-list" class="stats-list">
+        <p>Calculating statistics...</p>
+    </div>
+</article>
+        </div>
+
+           
+    </section>
+<div class="task8-container">
+    <h2 class="task8-title">Recent Transactions</h2>
+    <hr class="task8-divider">
+    <ul id="recent-transactions-list">
+        </ul>
+</div>
+<div class="task9-container">
+    <h2>Monthly Summary (<span id="current-month-name">Month</span>)</h2>
+    <hr class="task9-divider">
+    
+    <p>Monthly Income: <strong id="monthly-income">$0</strong></p>
+    <p>Monthly Expenses: <strong id="monthly-expense">$0</strong></p>
+    <p>Monthly Balance: <strong id="monthly-balance">$0</strong></p>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

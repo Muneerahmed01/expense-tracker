@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-transaction.html">Add Transaction</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <h2>Registration Form</h2>
+<form id="signupForm">
+
+    <label>Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+    <br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address">
+    <br><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+    <br><br>
+
+    <label>Confirm Password:</label><br>
+    <input type="password" id="confirmPassword" name="confirm_password" placeholder="Confirm your password">
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other
+    <br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob">
+    <br><br>
+
+    <label>Country:</label><br>
+    <select name="country">
+        <option value="">Select Country</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Balochistan">Balochistan</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+    </select>
+    <br><br>
+<input type="checkbox" id="terms" name="terms">
+<label for="terms">I accept Terms and Conditions</label>
+    <br><br>
+
+    <button type="submit">Sign Up</button>
+
+</form>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-transaction.html">Add Transaction</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <h2>Transaction History</h2>
+<!-- Table se upar yeh div add kar dein -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by category or description...">
+</div>
+<div class="filter-container">
+    <label for="filterType" class="filter-label">Filter by Type:</label>
+    <select id="filterType">
+        <option value="all">All Transactions</option>
+        <option value="Income">Income 🟢</option>
+        <option value="Expense">Expense 🔴</option>
+    </select>
+</div>
+<div class="sort-container">
+    <label for="sortType">Sort by:</label>
+    <select id="sortType">
+        <option value="date-desc">Date (Newest First)</option>
+        <option value="date-asc">Date (Oldest First)</option>
+        <option value="amount-desc">Amount (High to Low)</option>
+        <option value="amount-asc">Amount (Low to High)</option>
+    </select>
+</div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Action</th> 
+            </tr>
+        </thead>
+        
+        <tbody id="transaction-rows">
+            </tbody>
+    </table>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

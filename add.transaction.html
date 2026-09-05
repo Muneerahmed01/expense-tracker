@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add-transaction.html">Add Transaction</a>
+        <a href="transactions.html">Transactions</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <h2>Add Transaction</h2>
+
+   <form id="transactionForm">
+
+    <label>Transaction Type:</label><br>
+    <select id="type" required>
+        <option value="">Select Type</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+    <br><br>
+
+    <label>Amount:</label><br>
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+    <br><br>
+
+    <label>Category:</label><br>
+    <input type="text" id="category" name="category" placeholder="Enter category" required>
+    <br><br>
+
+    <label>Date:</label><br>
+    <input type="date" id="date" name="date" required>
+    <br><br>
+
+    <label>Description:</label><br>
+    <textarea id="description" name="description" placeholder="Enter transaction description" required></textarea>
+    <br><br>
+
+    <button type="submit">Add Transaction</button>
+
+</form>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
+```
+
+
