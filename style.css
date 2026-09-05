@@ -1,0 +1,334 @@
+body {
+    margin: 20PX;
+    padding: 10;
+    font-family: Arial, sans-serif;
+    background-color: #bcb7b7;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 20PX;
+    display: inline-block;
+}
+nav {
+    text-align: center;
+}
+nav a:hover {
+    background-color: #555;
+    color: yellow;
+}
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+nav a:hover{
+    color:yellow;}
+
+form{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* checkbox + radio fix */
+input[type="checkbox"],
+input[type="radio"]{
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+button{
+    width:30%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(114, 114, 121);
+    color: white;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+article{
+    background-color: #fcf0f0;;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    text-align: center;
+    width: 200px;
+}
+
+/* TABLE STYLING */
+table {
+    width: 100%;
+    border-collapse: collapse;  /* removes double borders */
+}
+
+/* Table header + cells */
+th, td {
+    border: 1px solid #333;   /* table borders */
+    padding: 12px;            /* space inside cells */
+    text-align: left;
+}
+
+/* Header background color */
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f6cece;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fcf0f0;
+}
+
+/* Optional: hover effect (nice touch) */
+tbody tr:hover {
+    background-color: #d6eaf8;
+}
+
+.search-container {
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+
+
+.search-container {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important; 
+    margin: 25px 0 !important;
+    max-width: none !important; 
+    clear: both !important;
+}
+
+#searchInput {
+    display: inline-block !important;
+    width: 100% !important;
+    max-width: 800px !important;      
+    padding: 14px 14px 14px 45px !important; 
+    font-size: 16px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 24px !important;     
+    outline: none !important;
+    box-sizing: border-box !important;
+    background-color: #ffffff !important;
+    
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%239aa0a6" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: 18px center !important; 
+}
+
+#searchInput:focus, #searchInput:hover {
+    border-color: #9aa0a6 !important;
+}
+
+
+/* --- TASK 5: DROPDOWN & SPACING STYLING --- */
+
+/* Dropdown ke poore container ko center karne aur gap badhane ke liye */
+.filter-container {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 15px !important;    /* Search bar se 15px ka gap */
+    margin-bottom: 35px !important; /* Table se 35px ka bada aur perfect gap */
+    clear: both !important;
+}
+
+/* "Filter by Type" wale text ki styling */
+.filter-label {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Dropdown box ko rounded aur modern banane ke liye */
+#filterType {
+    padding: 8px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;           /* Search bar ki tarah rounded corners */
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Halka sa shadow effect */
+    transition: border-color 0.2s;
+}
+
+/* Dropdown par hover karne se border ka color change hoga */
+#filterType:hover, #filterType:focus {
+    border-color: #9aa0a6;
+}
+
+
+.sort-container {
+    display: block !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+    margin-bottom: 35px !important;
+    clear: both !important;
+}
+
+.sort-label {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #333;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#sortType {
+    padding: 8px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s;
+    width: 220px;
+}
+
+#sortType:hover, #sortType:focus {
+    border-color: #9aa0a6;
+}
+
+/* --- TASK 7: DASHBOARD CATEGORY STATISTICS --- */
+.stats-list {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.stats-list p {
+    margin: 8px 0;
+    color: #333;
+}
+
+.stats-item-bold {
+    font-weight: 900 !important;
+}
+
+
+
+.task9-container {
+    clear: both !important;
+    display: block !important;
+    margin: 40px 20px !important;
+    font-family: Arial, sans-serif;
+}
+
+/* Safaid dabba jis ki width kafi hai taake text khula rahe */
+.summary-box {
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px;
+    width: 350px; /* Text ko dabne se bachane ke liye safe width */
+    box-sizing: border-box;
+}
+
+/* Har line ke beech me thoda gap */
+.summary-box p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Darmiyan wali line */
+.summary-hr {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 15px 0;
+}
+
+/* Monthly Balance ko thoda barha aur prominent karne ke liye */
+.balance-text {
+    font-size: 18px !important;
+}
+
+
+/* --- TASK 8: RECENT TRANSACTIONS STYLING --- */
+.task8-container {
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 40px 20px !important;
+    font-family: Arial, sans-serif;
+}
+
+.task8-title {
+    display: block !important;
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+    color: #000;
+}
+
+.task8-divider {
+    display: block !important;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+    width: 300px;
+}
+
+/* Is class ki wajah se har transaction har haal mein nayi line se shuru hogi aur proper gap dikhega */
+.task8-item {
+    display: flex !important;
+    justify-content: space-between;
+    width: 300px;
+    margin: 15px 0 !important;
+    font-size: 16px;
+    color: #000;
+}
+
+
+/* --- TASK 9: MONTHLY SUMMARY --- */
+.task9-container {
+    margin: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.task9-divider {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+    width: 300px;
+}
+
+.task9-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #000;
+}
